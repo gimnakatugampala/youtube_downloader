@@ -1,0 +1,1 @@
+web:gunicorn YTdownloader.wsgi --log-file

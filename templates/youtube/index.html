@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Navbar -->
+{% include 'partials/_navbar.html' %}
+
+<div class="container">
+    <span style="margin:25px;">
+    <h1 class="text-center">YTV Downloader</h1>
+
+    <form action="{% url 'index' %}" method="POST" class="row" style="margin: auto;">
+        {%csrf_token%}
+    <div class="col-md-12">
+        <input type="text" class="form-control" placeholder="Enter The URL" id="link" name="link" >
+      </div>
+      <input style="margin-top: 10px;width: 100%;" id="submit" class="btn btn-primary col-md-12 mt-5" type="submit" value="Download">
+    </form>
+</span>
+</div>
+
+{% endblock %}
