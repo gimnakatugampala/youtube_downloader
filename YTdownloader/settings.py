@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-@!yo1@&&c#4p&6y$)=)u5p$cvb5e#xdbqv6oh1jbavmtg0z@4t
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ytvdownloader2021.herokuapp.com']
 
 
 # Application definition
